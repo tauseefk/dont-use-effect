@@ -9,6 +9,6 @@ export const Incrementor: FC<IncrementorProps> = ({ count, handleIncrement }) =>
       borderColor: getRandomHexColor(),
     }}>
     <p>{count}</p>
-    <button onClick={handleIncrement}>Update</button>
+    <button onClick={handleIncrement}>Increment</button>
   </div>
 }
