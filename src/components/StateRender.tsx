@@ -6,8 +6,8 @@ export const StateRenderer: FC<StateRendererProps> = ({ count, title }) => {
   return <div className="container border" style={{
     borderColor: getRandomHexColor(),
   }}>
-    <h5>{title}</h5>
     <p>{count}</p>
+    <h5>{title}</h5>
   </div>
 }
 
