@@ -56,14 +56,33 @@
   display: flex;
 }
 
-.row {
+.flex-row {
   flex-direction: row;
 }
 
-.col {
+.flex-col {
   flex-direction: column;
 }
 
 .gap {
   column-gap: 8px;
+  row-gap: 8px;
+}
+
+.counter {
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.pointer:hover {
+  color: black;
+  background-color: white;
 }

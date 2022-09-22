@@ -1,13 +1,14 @@
 import { FC } from "react";
 import { getRandomHexColor } from "./getRandomColor";
 
-interface EditStateProps { state: any, handleUpdateState: () => void }
+interface IncrementorProps { count: number, handleIncrement: () => void }
 
-export const EditState: FC<EditStateProps> = ({ state, handleUpdateState }) => {
-  return <div className="container border" style={{
-    borderColor: getRandomHexColor(),
-  }}>
-    <p>{state.count}</p>
-    <button onClick={handleUpdateState}>Update</button>
+export const Incrementor: FC<IncrementorProps> = ({ count, handleIncrement }) => {
+  return <div
+    className="container flex flex-col justify-around pointer-cursor counter" style={{
+      borderColor: getRandomHexColor(),
+    }}>
+    <p>{count}</p>
+    <button onClick={handleIncrement}>Update</button>
   </div>
 }
