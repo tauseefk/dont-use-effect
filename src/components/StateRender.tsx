@@ -31,4 +31,4 @@ export const StateRenderer: FC<StateRendererProps> = ({ counts, title, selectedC
   </div>
 }
 
-export const MemoStateRender = memo(({ counts, title, selectedCounter, onSelectCounter }: StateRendererProps) => <StateRenderer counts={counts} title={title} selectedCounter={selectedCounter} onSelectCounter={onSelectCounter} />);
+export const MemoStateRender = memo(StateRenderer);
